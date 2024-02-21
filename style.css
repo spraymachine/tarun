@@ -128,7 +128,7 @@ nav{
 }
 
 .dropdown-menu.open{
-    height: 240px;
+    height: 190px;
 }
 
 .dropdown-menu li{
@@ -136,6 +136,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .dropdown-menu li a{
@@ -178,18 +179,18 @@ nav{
         padding-top: 15em;
     }
     .landing h1{
-        font-size: 3.2em;
+        font-size: 2.69em;
     }
         
 }
 
-/* -------------------Services-------------------*/
+/* -------------------Credentials-------------------*/
 
 
 
 .services-container{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     padding: 0 8%;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)) ,
     url(./assets/bg.jpg);
@@ -268,12 +269,8 @@ nav{
     .services-row{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 30px  
-    }
-
-    .services{
-        height: auto;
-        overflow: scroll
+        grid-gap: 30px;
+        
     }
 }
 
@@ -350,6 +347,22 @@ nav{
     position: relative;
 }
 
+
+/* --------------Responsive-------------- */
+
+
+@media screen and (max-width: 576px){
+    .clients-container{
+        padding: none;
+        overflow: hidden;
+        min-width: fit-content;
+    }
+
+    .clients-container .client-name{
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 /* --------------Contact-------------- */
