@@ -6,7 +6,7 @@
     <title>Krishi Eng</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="./script.js"></script>
+    
 </head>
 <body>
     
@@ -23,21 +23,32 @@
                 <a href="#licenses">Licenses</a>
             </div>
             
-            <div class="contact-h"><a href="#">Contact Us</a></div>
+            <div class="contact-h"><a href="#contact">Contact Us</a></div>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
+            <div class="dropdown-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#licenses">Licenses</a></li>
+                <li><a href="#contact" id="contact-us">Contact Us</a></li>
+                
+                
+            </div>
         </nav>
 
-        <section class="landing">
-            <span>We're</span>
-            <h1>Krishi Engineers</h1>
-
-            <br>
-            <a href="#">Get in touch</a>
-        </section>
 
     </header>
+
+    <section class="landing">
+        <span>We're</span>
+        <h1>Krishi Engineers</h1>
+
+        <br>
+        <a href="#">Get in touch</a>
+    </section>
 
     <section class="services">
         <div class="services-container">
@@ -107,12 +118,12 @@
        </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-box">
                 <div class="left"></div>
                 <div class="right">
-                    <h2>Contact</h2>
+                    <h2>Contact Us</h2>
                     <input type="text" class="field" placeholder="Your Name">
                     <input type="email" class="field" placeholder="Your Email">
                     <input type="text" class="field" placeholder="Your Phone">
@@ -122,5 +133,7 @@
             </div>
         </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 </html>

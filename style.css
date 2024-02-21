@@ -49,7 +49,7 @@ nav{
     width: 90%;
 }
 
-.contact-h a{
+.contact-h a, #contact-us{
     text-decoration: none;
     color: black;
     padding: 10px 20px;
@@ -110,6 +110,78 @@ nav{
     display: none;
 }
 
+
+/* -------------------Responsive-------------------*/
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li{
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu li #contact-us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .menu a , .contact-h a{
+        display: none;
+    }
+    
+.toggle-btn{
+    display: block;
+    cursor: pointer;
+    font-size: 1.32em;
+}
+.dropdown-menu{
+    display: block;
+}
+}
+
+@media (max-width: 576px){
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+        top: 72px
+    }
+    .logo{
+        font-size: 23px;
+        padding-left: .7em;
+    }
+    .landing{
+        padding-top: 15em;
+    }
+    .landing h1{
+        font-size: 3.2em;
+    }
+        
+}
 
 /* -------------------Services-------------------*/
 
@@ -189,6 +261,21 @@ nav{
     color: black;
 }
 
+
+/* --------------Respnsive-------------- */
+
+@media (max-width: 576px){
+    .services-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px  
+    }
+
+    .services{
+        height: auto;
+        overflow: scroll
+    }
+}
 
 /* --------------Clients-------------- */
 
@@ -381,6 +468,13 @@ nav{
     }
 
     .left{
-        height: 200px;
+        display: none;
+    }
+    .right{
+        width: fit-content;
+    }
+    .contact-container{
+        padding: 0%;
     }
 }
+
